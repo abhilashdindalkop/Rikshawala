@@ -1,7 +1,7 @@
 Rikshawala
 ========================================
 
-Simple REST API's to list nearby Autorikshaw using Mongo DB with Autorikshaw profile details
+Simple REST API's to list nearby Autorikshaw using Play Framework with Java and Mongo DB
 
 Code Structure
 ========
