@@ -1,7 +1,7 @@
 Rikshawala
 ========================================
 
-Simple REST API's to list nearby Autorikshaw using Play Framework with Java and Mongo DB
+REST API's to list nearby Autorikshaw and prioritized according to fares using Play Framework with Java and Mongo DB
 
 Code Structure
 ========
