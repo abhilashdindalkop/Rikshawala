@@ -51,37 +51,37 @@ public class JsonRequestValidation extends Action<ValidateJson> {
             }
 
             String errorMessage;
-            MyException ymlException;
+            MyException myException;
             errorKey = capitalizeFirstLetter(errorKey);
 
             switch (message) {
                 case "error.required":
                     errorMessage = ApiFailureMessages.FIELD_MISSING;
-                    ymlException = new MyException(errorMessage, errorKey, arguments);
+                    myException = new MyException(errorMessage, errorKey, arguments);
 					break;
 				case "error.email":
 					errorMessage = ApiFailureMessages.INVALID_EMAIL;
-                    ymlException = new MyException(errorMessage, errorKey, arguments);
+                    myException = new MyException(errorMessage, errorKey, arguments);
 					break;
                 case "error.minLength":
                     errorMessage = ApiFailureMessages.MIN_LENGTH_VALIDATION;
-                    ymlException = new MyException(errorMessage, errorKey, arguments);
+                    myException = new MyException(errorMessage, errorKey, arguments);
                     break;
                 case "error.maxLength":
                     errorMessage = ApiFailureMessages.MAX_LENGTH_VALIDATION;
-                    ymlException = new MyException(errorMessage, errorKey, arguments);
+                    myException = new MyException(errorMessage, errorKey, arguments);
                     break;
                 case "error.pattern":
                     errorMessage = ApiFailureMessages.PATTERN_VALIDATION;
-                    ymlException = new MyException(errorMessage, errorKey, arguments);
+                    myException = new MyException(errorMessage, errorKey, arguments);
                     break;
                 default:
                     errorMessage = ApiFailureMessages.INVALID_INPUT;
-                    ymlException = new MyException(errorMessage, errorKey, arguments);
+                    myException = new MyException(errorMessage, errorKey, arguments);
                     break;
             }
 
-            return baseController.failureResponsePromise(ymlException);
+            return baseController.failureResponsePromise(myException);
 		}
 
 		return null;

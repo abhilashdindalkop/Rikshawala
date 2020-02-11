@@ -42,7 +42,7 @@ public class AutowalaDAOImpl implements AutowalaDAO {
 		newAuto.setAutoId(UUID.randomUUID().toString());
 		newAuto.setCreatedTime(new Date());
 		newAuto.setUpdatedTime(new Date());
-
+		ds.save(newAuto);
 		return newAuto;
 	}
 
