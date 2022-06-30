@@ -27,6 +27,8 @@ public class AutoController extends BaseController {
 	private CustomObjectMapper customObjectMapper;
 	private AutowalaService autoService;
 
+	int x;
+
 	@Inject
 	public AutoController(CustomObjectMapper customObjectMapper, AutowalaService autoService) {
 		this.customObjectMapper = customObjectMapper;
